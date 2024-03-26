@@ -31,9 +31,4 @@ function generiereZitat() {
         zitatElement.innerHTML = zufallsZitat;
     }
 }
-var arrayLänge = zitateArray.length;
-console.log("Die Arraylänge ist " + arrayLänge);
-var gerundeteZufallszahl = Math.round(Math.random() * arrayLänge);
-console.log("Die gerundete Zufallszahl ist " + gerundeteZufallszahl);
-var zufallsZitat = zitateArray[gerundeteZufallszahl];
-console.log(zufallsZitat);
+
