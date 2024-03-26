@@ -21,8 +21,10 @@ var zitateArray = [
     "Die größte Ehre im Leben liegt nicht darin, niemals zu fallen, sondern jedes Mal aufzustehen, wenn man fällt."
 ];
 function generiereZitat() {
-    var zitat = zitateArray[1];
-    var gerundeteZufallszahl = Math.round(Math.random() * arrayLänge);
+    //let zitat: string = zitateArray[0];
+    var zitateArrayLänge = zitateArray.length - 1;
+    var gerundeteZufallszahl = Math.round(Math.random() * zitateArrayLänge);
+    console.log(gerundeteZufallszahl);
     var zufallsZitat = zitateArray[gerundeteZufallszahl];
     var zitatElement = document.getElementById('zitat');
     if (zitatElement) {
