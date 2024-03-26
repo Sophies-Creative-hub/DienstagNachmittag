@@ -36,14 +36,4 @@ function generiereZitat() :void {
         zitatElement.innerHTML = zufallsZitat;
     }
 }
-let arrayLänge: number = zitateArray.length;
 
-console.log("Die Arraylänge ist " + arrayLänge);
-
-let gerundeteZufallszahl: number = Math.round(Math.random() * arrayLänge)
-
-console.log("Die gerundete Zufallszahl ist " + gerundeteZufallszahl);
-
-let zufallsZitat: string = zitateArray[gerundeteZufallszahl];
-
-console.log(zufallsZitat);
