@@ -35,8 +35,6 @@ function generiereZitat() :void {
     if (zitatElement){
         zitatElement.innerHTML = zufallsZitat;
     }
-    
-
 }
 let arrayLänge: number = zitateArray.length;
 
