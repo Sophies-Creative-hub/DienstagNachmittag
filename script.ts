@@ -22,18 +22,22 @@ const zitateArray:string [] = [
 ];
 
 function generiereZitat() :void {
-    
-    let zitat: string = zitateArray[1];
-    
-    let gerundeteZufallszahl: number = Math.round(Math.random() * arrayLänge)
+
+    //let zitat: string = zitateArray[0];
+    let zitateArrayLänge: number = zitateArray.length -1;
+
+    let gerundeteZufallszahl: number = Math.round(Math.random() * zitateArrayLänge);
+    console.log(gerundeteZufallszahl);
     let zufallsZitat: string = zitateArray[gerundeteZufallszahl];
+
 
     let zitatElement = document.getElementById('zitat');
     if (zitatElement){
         zitatElement.innerHTML = zufallsZitat;
     }
-}
+    
 
+}
 let arrayLänge: number = zitateArray.length;
 
 console.log("Die Arraylänge ist " + arrayLänge);
